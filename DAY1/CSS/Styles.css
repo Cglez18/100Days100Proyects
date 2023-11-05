@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+
+}.contenedor{
+    top: 10px auto;
+    height: 100vh;
+    width: 100wh;
+    
+}
+.centrado{
+    position: absolute;
+    border-radius: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 350px;
+    background-color: rgba(0, 255, 157, 0.719);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4) ;
+    border: 2px black solid;
+    padding: 20px;
+}
+.terminal-window {
+    width: 60%;
+    max-width: 700px;
+    height: 55vh;
+    border: 2px solid #000;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-color: rgb(14, 245, 149);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.terminal{
+    padding-left: 20px;
+}
+pre{
+    color: rgb(52, 39, 128);
+    font-weight: 900;
+}
+.title-bar {
+    background-color: #333;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.title {
+    color: white;
+    font-weight: bold;
+    flex-grow: 1; 
+}
+
+.button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.close {
+    background-color: #FF0000; /* Rojo */
+}
+
+.minimize {
+    background-color: #FFFF00; /* Amarillo */
+}
+
+.maximize {
+    background-color: #00FF00; /* Verde */
+}
+.titulo{
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.java{
+    display: flex;
+    
+}
+.imgj{
+    margin-left: 10px;
+}
+.imgp{
+    margin-left: 10px;
+}
+.imgc{
+    margin-left: 5px;
+}
+.cpp{
+    display: flex;
+    margin-top: 10px;
+}
+.python{
+    display: flex;
+    margin-top: 10px;
+}
+
+code.code.Java{
+    width: 27ch;
+    animation: typing 2s steps(32),
+    blink .5s step-end infinite alternate;
+    overflow: hidden;
+ }
+ code.code.C{
+    width: 22ch;
+    animation: typing 2s steps(22),
+    blink .5s step-end infinite alternate;
+    overflow: hidden;
+ }
+ code.code{
+    color: rgb(red, green, blue);
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    font-family: 'Press Start 2P', cursive;
+ }
+ code.code.Python{
+    width: 16ch;
+    animation: typing 2s steps(20),
+    blink .5s step-end infinite alternate;
+    overflow: hidden;
+ }
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+@keyframes blink{
+    50% { border-color: transparent;}
+}
