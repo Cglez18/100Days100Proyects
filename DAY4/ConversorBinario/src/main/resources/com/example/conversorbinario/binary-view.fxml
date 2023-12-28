@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="237.0" prefWidth="352.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.conversorbinario.BinaryController">
+    <children>
+        <Button fx:id="btn_Convert" layoutX="100.0" layoutY="187.0" mnemonicParsing="false" onAction="#onConvert" text="Convertir" />
+        <Button fx:id="btn_Clean" layoutX="240.0" layoutY="187.0" mnemonicParsing="false" onAction="#onClean" text="Borrar" />
+        <TextField fx:id="txt_Decimal" layoutX="120.0" layoutY="94.0" prefHeight="25.0" prefWidth="196.0" />
+        <TextField fx:id="txt_Binary" layoutX="120.0" layoutY="137.0" prefHeight="25.0" prefWidth="196.0" />
+        <Label layoutX="36.0" layoutY="98.0" text="Decimal" />
+        <Label layoutX="39.0" layoutY="141.0" text="Binario" />
+        <Label layoutX="90.0" layoutY="35.0" text="Conversor Decimal a Binario">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+    </children>
+</Pane>
